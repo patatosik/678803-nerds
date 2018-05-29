@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Natalia Shtykhno](https://up.htmlacademy.ru/htmlcss/21/user/678803).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Зубов](https://htmlacademy.ru/profile/id42701).
 
 ---
 
