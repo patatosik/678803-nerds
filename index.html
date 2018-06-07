@@ -145,8 +145,20 @@
       </div>
     </footer>
     <section class="modal modal-contacts-form">
-      <p>Напишите нам</p>
-      <!-- Здесь будет форма -->
+      <!--<p>Напишите нам</p>
+       Здесь будет форма -->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+            <label for="name-field">Ваше имя</label>
+              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+            <label for="email-field">Ваш e-mail:</label>
+              <input type="email" name="email" id="email-field" placeholder="email@example.com">
+            <label for="comment-field">Текст письма:</label>
+              <textarea name="comment" row="5" id="comment-field">В свободной форме</textarea>
+            <input type="submit" value="Отправить">
+        </fieldset>
+      </form>
       <span class="modal-close">x</span>
     </section>
   </body>
