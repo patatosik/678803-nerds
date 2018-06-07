@@ -24,7 +24,43 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры шаблонов</h2>
-        <!-- Здесь будет форма -->
+        <!-- Форма фильтров -->
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input type="range" min="0" max="15000" step="1">
+            <p>от 1 до 15 000</p>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка</legend>
+            <label>
+              <input type="radio" name="grid" value="Адаптивная" checked>
+              Адаптивная
+            </label>
+            <label>
+              <input type="radio" name="grid" value="Фиксированная">
+              Фиксированная
+            </label>
+            <label>
+              <input type="radio" name="grid" value="Резиновая">
+              Резиновая
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+              <input type="checkbox" name="slider" id="slider-field" value="Слайдер" checked>
+                <label for="slider-field">Слайдер</label>
+              <input type="checkbox" name="features-block" id="features-block-field" value="Блок преимуществ">
+                <label for="features-block-field">Блок преимуществ</label>
+              <input type="checkbox" name="news" id="news-field" value="Новости" checked>
+                <label for="news-field">Новости</label>
+              <input type="checkbox" name="galery" id="galery-field" value="Галерея">
+                <label for="galery-field">Галерея</label>
+              <input type="checkbox" name="cart" id="cart-field" value="Корзина">
+                <label for="cart-field">Корзина</label>
+          </fieldset>
+          <input type="submit" value="Показать">
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
