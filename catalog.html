@@ -26,6 +26,31 @@
         <h2 class="visually-hidden">Фильтры шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
+            <legend>Сортировать:</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button" value="price" id="filter-price" checked>
+                <label for="filter-price">По цене</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button" value="type" id="filter-type">
+                <label for="filter-type">По типу</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button" value="title" id="filter-title">
+                <label class="visually-hidden" for="filter-title">По названию</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button-triangle" value="up" id="filter-up" checked>
+                <label class="visually-hidden" for="filter-up">По возрастанию</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button-triangle" value="down" id="filter-down">
+                <label for="filter-down">По убыванию</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
             <legend>Стоимость</legend>
             <input class="filter-input filter-input-range" type="range" name="price" id="filter-price" min="0" max="20000" value="0" step="100">
             <label for="filter-price-from">от</label>
