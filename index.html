@@ -145,21 +145,25 @@
       </div>
     </footer>
     <section class="modal modal-contacts-form">
-      <!--<p>Напишите нам</p>
-       Здесь будет форма -->
-      <form action="#" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Напишите нам</legend>
-            <label for="name-field">Ваше имя</label>
-              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-            <label for="email-field">Ваш e-mail:</label>
-              <input type="email" name="email" id="email-field" placeholder="email@example.com">
-            <label for="comment-field">Текст письма:</label>
-              <textarea name="comment" row="5" id="comment-field">В свободной форме</textarea>
-            <input type="submit" value="Отправить">
+            <p class="feedback-item">
+              <label for="feedback-name">Ваше имя</label>
+              <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+            </p>
+            <p class="feedback-item">
+              <label for="feedback-email">Ваш e-mail:</label>
+              <input type="email" name="email" id="feedback-email" placeholder="email@example.com">
+            </p>
+            <p class="feedback-item">
+              <label for="feedback-comment">Текст письма:</label>
+              <textarea name="comment" row="5" id="feedback-comment">В свободной форме</textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
         </fieldset>
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

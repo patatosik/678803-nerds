@@ -27,8 +27,11 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
-            <input type="range" min="0" max="15000" step="1">
-            <p>от 1 до 15 000</p>
+            <input class="filter-input filter-input-range" type="range" name="price" id="filter-price" min="0" max="20000" value="0" step="100">
+            <label for="filter-price-from">от</label>
+            <input class="filter-input filter-input-text" type="text" name="price" id="filter-price-from">
+            <label for="filter-price-to">до</label>
+            <input class="filter-input filter-input-text" type="text" name="price" id="filter-price-to">
           </fieldset>
           <fieldset>
             <legend>Сетка</legend>
@@ -157,9 +160,25 @@
       </div>
     </footer>
     <section class="modal modal-contacts-form">
-      <p>Напишите нам</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+            <p class="feedback-item">
+              <label for="feedback-name">Ваше имя</label>
+              <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+            </p>
+            <p class="feedback-item">
+              <label for="feedback-email">Ваш e-mail:</label>
+              <input type="email" name="email" id="feedback-email" placeholder="email@example.com">
+            </p>
+            <p class="feedback-item">
+              <label for="feedback-comment">Текст письма:</label>
+              <textarea name="comment" row="5" id="feedback-comment">В свободной форме</textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </fieldset>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
