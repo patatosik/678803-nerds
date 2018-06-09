@@ -26,31 +26,6 @@
         <h2 class="visually-hidden">Фильтры шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Сортировать:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button" value="price" id="filter-price" checked>
-                <label for="filter-price">По цене</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button" value="type" id="filter-type">
-                <label for="filter-type">По типу</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button" value="title" id="filter-title">
-                <label class="visually-hidden" for="filter-title">По названию</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button-triangle" value="up" id="filter-up" checked>
-                <label class="visually-hidden" for="filter-up">По возрастанию</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-button-triangle" value="down" id="filter-down">
-                <label for="filter-down">По убыванию</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
             <legend>Стоимость</legend>
             <input class="filter-input filter-input-range" type="range" name="price" id="filter-price" min="0" max="20000" value="0" aria-label="Установить диапозон стоимости">
             <label for="filter-price-from">от</label>
@@ -102,6 +77,26 @@
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
         </form>
+      </section>
+      <section class="sorting">
+        <h2>Сортировка</h2>
+        <ul>
+            <li class="sorting-option">
+              <button class="sorting-button" type="button">По цене</button>
+            </li>
+            <li class="sorting-option">
+              <button class="sorting-button" type="button">По типу</button>
+            </li>
+            <li class="sorting-option">
+              <button class="sorting-button" type="button">По названию</button>
+            </li>
+            <li class="sorting-option">
+              <button class="sorting-button" type="button">По возрастанию</button>
+            </li>
+            <li class="sorting-option">
+              <button class="sorting-button" type="button">По убыванию</button>
+            </li>
+        </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -205,36 +200,6 @@
             <button class="button" type="submit">Отправить</button>
         </fieldset>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal modal-sedona">
-      <h2 class="visually-hidden">Шаблон Седона</h2>
-      <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет главной страницы сайта.">
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal modal-pink">
-      <h2 class="visually-hidden">Шаблон Пинк</h2>
-      <img src="img/img-pink.jpg" width="360" height="576" alt="Макет главной страницы сайта приложения.">
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal modal-barbershop">
-      <h2 class="visually-hidden">Шаблон барбершопа</h2>
-      <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет главной страницы сайта.">
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal modal-mishka">
-      <h2 class="visually-hidden">Шаблон Мишка</h2>
-      <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет главной страницы сайта.">
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal modal-aplus">
-      <h2 class="visually-hidden">Шаблон Эй-плас</h2>
-      <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет главной страницы сайта.">
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal modal-kvast">
-      <h2 class="visually-hidden">Шаблон Кваст</h2>
-      <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет главной страницы сайта.">
       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
