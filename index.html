@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Студия Нёрдс</title>
+    <title>Студия дизайна Нёрдс</title>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
@@ -27,32 +27,30 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-slider-list">
           <li class="features-slider-item">
-            <p class="features-slider-slogan">Долго, дорого, скрупулезно.</p>
+            <h3 class="features-slider-slogan">Долго, дорого, скрупулезно.</h3>
             <p class="features-slider-lead">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="features-slider-button" href="catalog.html">Узнать больше</a>
+            <a class="features-slider-button" href="catalog.html" aria-label="Перейти в каталог шаблонов">Узнать больше</a>
           </li>
           <li class="features-slider-item">
-            <p class="features-slider-slogan">Любим математику, как никто другой.</p>
+            <h3 class="features-slider-slogan">Любим математику, как никто другой.</h3>
             <p class="features-slider-lead">Никакого креатива, только математические формулы для расчёта идеальных
          пропорций.</p>
-            <a class="features-slider-button" href="catalog.html">Узнать больше</a>
+            <a class="features-slider-button" href="catalog.html" aria-label="Перейти в каталог шаблонов">Узнать больше</a>
           </li>
           <li class="features-slider-item">
-            <p class="features-slider-slogan">Только ночь, только хардкор!</p>
+            <h3 class="features-slider-slogan">Только ночь, только хардкор!</h3>
             <p class="features-slider-lead">Работать днём, как все? Мы против этого. Ближе к полуночи работа только
          начинается.</p>
-            <a class="features-slider-button" href="catalog.html">Узнать больше</a>
+            <a class="features-slider-button" href="catalog.html" aria-label="Перейти в каталог шаблонов">Узнать больше</a>
           </li>
         </ul>
         <div class="features-slider-controls">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
-          </div>
+          <input type="radio" id="btn-1" name="toggle" checked aria-label="Перейти к слайду №1 преимуществ">
+          <label for="btn-1"></label>
+          <input type="radio" id="btn-2" name="toggle" aria-label="Перейти к слайду №2 преимуществ">
+          <label for="btn-2"></label>
+          <input type="radio" id="btn-3" name="toggle" aria-label="Перейти к слайду №3 преимуществ">
+          <label for="btn-3"></label>
         </div>
       </section>
       <section class="services">
@@ -61,17 +59,17 @@
           <li class="services-item">
             <h3>Веб-сайты</h3>
             <p class="services-lead">Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <a class="services-button" href="catalog.html">Заказать</a>
+            <a class="services-button" href="catalog.html" aria-label="Перейти на страницу каталога шаблонов">Заказать</a>
           </li>
           <li class="services-item">
             <h3>Приложения</h3>
             <p class="services-lead">Покорите топ-10 приложений в AppStore и GooglePlay</p>
-            <a class="services-button" href="catalog.html">Заказать</a>
+            <a class="services-button" href="catalog.html" aria-label="Перейти на страницу каталога шаблонов">Заказать</a>
           </li>
           <li class="services-item">
             <h3>Презентации</h3>
             <p class="services-lead">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="services-button" href="catalog.html">Заказать</a>
+            <a class="services-button" href="catalog.html" aria-label="Перейти на страницу каталога шаблонов">Заказать</a>
           </li>
         </ul>
       </section>
@@ -111,22 +109,22 @@
           <ul class="about-us-partners">
             <li class="about-us-partners-logo">
               <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-1.png" width="199" height="68" alt="HTML academy.">
+                <img src="img/logo-1.png" width="199" height="68" alt="Перейти на страницу HTML academy.">
               </a>
             </li>
             <li class="about-us-partners-logo">
               <a href="#">
-                <img src="img/logo-2.png" width="209" height="90" alt="Барбершоп Бородинский.">
+                <img src="img/logo-2.png" width="209" height="90" alt="Перейти на страницу барбершопа Бородинский.">
               </a>
             </li>
             <li class="about-us-partners-logo">
               <a href="#">
-                <img src="img/logo-3.png" width="185" height="52" alt="Пинк.">
+                <img src="img/logo-3.png" width="185" height="52" alt="Перейти на страницу Пинк.">
               </a>
             </li>
             <li class="about-us-partners-logo">
               <a href="#">
-                <img src="img/logo-4.png" width="173" height="84" alt="Мишка.">
+                <img src="img/logo-4.png" width="173" height="84" alt="Перейти на страницу Мишка.">
               </a>
             </li>
           </ul>
@@ -162,11 +160,11 @@
           <legend>Напишите нам</legend>
             <p class="feedback-item">
               <label for="feedback-name">Ваше имя</label>
-              <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+              <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" aria-describedby="feedback-name">
             </p>
             <p class="feedback-item">
               <label for="feedback-email">Ваш e-mail:</label>
-              <input type="email" name="email" id="feedback-email" placeholder="email@example.com">
+              <input type="email" name="email" id="feedback-email" placeholder="email@example.com" aria-describedby="feedback-email">
             </p>
             <p class="feedback-item">
               <label for="feedback-comment">Текст письма:</label>
