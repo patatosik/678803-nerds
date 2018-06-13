@@ -27,9 +27,9 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры шаблонов</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Стоимость</legend>
+            <legend>Стоимость:</legend>
             <input class="filter-input filter-input-range" type="range" name="price" id="filter-price" min="0" max="20000" value="0" aria-label="Установить диапозон стоимости">
             <label for="filter-price-from">от</label>
             <input class="filter-input filter-input-text" type="text" name="price" id="filter-price-from" aria-label="Укажите минимальную стоимость">
@@ -37,7 +37,7 @@
             <input class="filter-input filter-input-text" type="text" name="price" id="filter-price-to" aria-label="Укажите максимальную стоимость">
           </fieldset>
           <fieldset>
-            <legend>Сетка</legend>
+            <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout" value="adaptive" id="filter-adaptive" checked>
@@ -82,23 +82,13 @@
         </form>
       </section>
       <section class="sorting">
-        <h2>Сортировка</h2>
+        <h2>Сортировать:</h2>
         <ul>
-            <li class="sorting-option">
-              <a href="#">По цене</a>
-            </li>
-            <li class="sorting-option">
-              <a href="#">По типу</a>
-            </li>
-            <li class="sorting-option">
-              <a href="#">По названию</a>
-            </li>
-            <li class="sorting-option">
-              <a href="#">По возрастанию</a>
-            </li>
-            <li class="sorting-option">
-              <a href="#">По убыванию</a>
-            </li>
+            <li><a class="sorting-current" href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li><a class="sorting-current" href="#">По возрастанию</a></li>
+            <li><a href="#">По убыванию</a></li>
         </ul>
       </section>
       <section class="catalog">
@@ -107,57 +97,57 @@
           <li class="catalog-item">
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет главной страницы сайта Седона.">
             <div class="catalog-item-price">
-              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение">Седона</a>
+              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Седона</h2></a>
               <h3 class="catalog-item-description">Информационный сайт для туристов</h3>
-              <button class="button catalog-item-price" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
+              <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
             </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-pink.jpg" width="360" height="576" alt="Макет главной страницы сайта приложения Пинк.">
             <div class="catalog-item-price">
-              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение">Pink App</a>
+              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Pink App</h2></a>
               <h3 class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</h3>
-              <button class="button catalog-item-price" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
+              <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
             </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет главной страницы сайта барбершопа Бородинский.">
             <div class="catalog-item-price">
-              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение">Barbershop</a>
+              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Barbershop</h2></a>
               <h3 class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</h3>
-              <button class="button catalog-item-price" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
+              <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
             </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет главной страницы сайта Мишка.">
             <div class="catalog-item-price">
-              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение">Mishka</a>
+              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Mishka</h2></a>
               <h3 class="catalog-item-description">Интернет-магазин вязаных игрушек</h3>
-              <button class="button catalog-item-price" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
+              <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
             </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет главной страницы сайта Эй-плас.">
             <div class="catalog-item-price">
-              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение">A Plus</a>
+              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>A Plus</h2></a>
               <h3 class="catalog-item-description">Лендинг курсов повышения квалификации</h3>
-              <button class="button catalog-item-price" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
+              <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
             </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет главной страницы сайта Кваст.">
             <div class="catalog-item-price">
-              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение">Кваст</a>
+              <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Кваст</h2></a>
               <h3 class="catalog-item-description">Промо-сайт производителя крафтового кваса</h3>
-              <button class="button catalog-item-price" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
+              <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
             </div>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a aria-label="Перейти на страницу 1">1</a></li>
-          <li class="pagination-item"><a href="#" aria-label="Перейти на страницу 2">2</a></li>
-          <li class="pagination-item"><a href="#" aria-label="Перейти на страницу 3">3</a></li>
-          <li class="pagination-item"><a class="button button-next" href="#" aria-label="Перейти на следуюющую страницу">Следующая</a></li>
+          <li><a class="button pagination-current" aria-label="Перейти на страницу 1">1</a></li>
+          <li><a class="button" href="#" aria-label="Перейти на страницу 2">2</a></li>
+          <li><a class="button" href="#" aria-label="Перейти на страницу 3">3</a></li>
+          <li><a class="button button-next" href="#" aria-label="Перейти на следуюющую страницу">Следующая</a></li>
         </ul>
       </section>
     </maim>
@@ -167,12 +157,12 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map-with-marker.png" width="1440" height="416" alt="Гугл-карта. Адрес студии Нердс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8.">
         <p class="footer-contacts">
-          Nerds Design Studio<br>
+          <span>Nёrds Design Studio</span><br>
           191186 г. Санкт-Петербург,<br>
           Б. Конюшенная, д. 19/8<br>
           Телефон: +7 (812) 275-75-75
         </p>
-        <a class="feedback-link" href="#">Напишите нам</a>
+        <a class="button" href="#">Напишите нам</a>
       </section>
       <div class="footer-social">
         <p class="footer-social-slogan">Давайте дружить, это выгодно!</p>
@@ -190,15 +180,15 @@
           <legend>Напишите нам</legend>
             <p class="feedback-item">
               <label for="feedback-name">Ваше имя</label>
-              <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" aria-describedby="feedback-name">
+              <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" aria-label="Ваше имя в формате: Имя Фамилия">
             </p>
             <p class="feedback-item">
               <label for="feedback-email">Ваш e-mail:</label>
-              <input type="email" name="email" id="feedback-email" placeholder="email@example.com" aria-describedby="feedback-email">
+              <input type="email" name="email" id="feedback-email" placeholder="email@example.com" aria-label="Ваш e-mail в формате: email@example.com">
             </p>
             <p class="feedback-item">
               <label for="feedback-comment">Текст письма:</label>
-              <textarea name="comment" row="5" id="feedback-comment">В свободной форме</textarea>
+              <textarea name="comment" row="5" id="feedback-comment" placeholder="В свободной форме" aria-label="Текст письма в свободной форме"></textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
         </fieldset>
