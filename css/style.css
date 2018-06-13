@@ -85,22 +85,22 @@ a.cart-link:active {
   line-height: 55px;
 }
 
-.features-list:first-child {
+.features-list li:first-child {
   background-color: #EEEEEE;
-  background-image: url("../img/slide-1.jpg")
-  background-repeat: repeat;
+  background-image: url("../img/slide-1.jpg");
+  background-repeat: no-repeat;
 }
 
-.features-list:nth-child(2) {
+.features-list li:nth-child(2) {
   background-color: #EEEEEE;
   background-image: url("../img/slide-2.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
-.features-list:last-child {
+.features-list li:last-child {
   background-color: #EEEEEE;
   background-image: url("../img/slide-3.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
 .services-item h3 {
