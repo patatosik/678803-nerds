@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #283136;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  font: inherit;
+  font-weight: medium;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.main-navigation {
+  font-weight: medium;
+  font-style: normal;
+  line-height: 30px;
+  color: #000000;
+  text-align: left;
+  background-color: #EEEEEE;
+}
+
+.site-navigation a,
+a.cart-link {
+  color: #000000;
+}
+
+a.cart-link {
+  background-color: #EEEEEE;
+}
+
+.site-navigation a:hover,
+a.cart-link:hover {
+  color: #fb565a;
+  background-color: #EEEEEE;
+}
+
+.site-navigation a:focus,
+a.cart-link:focus {
+  color: rgba 0 0 0, 0.3;
+}
+
+.site-navigation a:active,
+a.cart-link:active {
+  text-decoration: underline;
+}
+
+.features {
+  background-color: #EEEEEE;
+}
+
+.features-item h3 {
+  font-weight: medium;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-item:nth-child(2) a {
+  background-color: #00ca74;
+}
+
+.services-item:nth-child(2) a:hover {
+  background-color: #00bc6c;
+}
+
+.services-item:nth-child(2) a:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.services-item:last-child a {
+  background-color: #efc84a;
+}
+
+.services-item:last-child a:hover {
+  background-color: #eab534;
+}
+
+.services-item:last-child a:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5a722;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+h2.about-slogan {
+  font-size: 45px;
+  font-weight: medium;
+  line-height: 45px;
+}
+
+.about-services h3,
+.about-accurasy-table caption {
+  font-weight: bold;
+}
+
+.about-accurasy-table th {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 10px;
+}
+
+.about-accurasy-table td {
+  line-height: 18px;
+}
+
+.footer-contacts p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.footer-contacts span {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+p.footer-social-slogan {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+p.footer-social-promo {
+  line-height: 22px;
+  color: #444444;
+}
+
+a.social-button {
+  background-color: #e1e1e1;
+}
+
+.modal {
+  background-color: white;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+  font: inherit;
+  background-color: #ffffff;
+  border: solid 2px #d7dcde;
+}
+
+.feedback-form input:hover {
+  border: solid 2px #b4b9bb;
+}
+
+.feedback-form input:focus {
+  border: solid 2px #000000;
+}
+
+.feedback-form legend {
+  font-size: 45px;
+  font-weight: medium;
+  line-height: 45px;
+}
+
+.feedback-item label {
+  font-weight: bold;
+  line-height: 18px;
+}
