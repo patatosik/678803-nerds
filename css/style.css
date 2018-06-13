@@ -21,7 +21,7 @@ ul {
 
 .button {
   font: inherit;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
@@ -42,7 +42,7 @@ ul {
 }
 
 .main-navigation {
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
   line-height: 30px;
   color: #000000;
@@ -80,7 +80,7 @@ a.cart-link:active {
 }
 
 .features-item h3 {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
@@ -122,7 +122,7 @@ a.cart-link:active {
 
 h2.about-slogan {
   font-size: 45px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 45px;
 }
 
@@ -206,7 +206,7 @@ a.social-button {
 
 .feedback-form legend {
   font-size: 45px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 45px;
 }
 
@@ -244,7 +244,7 @@ a.social-button {
 
 .inner-page h1 {
   font-size: 55px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 55px;
   text-align: center;
   background-color: #EEEEEE;
