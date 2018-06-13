@@ -110,6 +110,21 @@ a.cart-link:active {
   text-transform: uppercase;
 }
 
+.services-list li:first-child {
+  background-image: url("../img/illustration-1.png");
+  background-repeat: no-repeat;
+}
+
+.services-list li:nth-child(2) {
+  background-image: url("../img/illustration-2.png");
+  background-repeat: no-repeat;
+}
+
+.services-list li:last-child {
+  background-image: url("../img/illustration-3.png");
+  background-repeat: no-repeat;
+}
+
 .services-item:nth-child(2) a {
   background-color: #00ca74;
 }
