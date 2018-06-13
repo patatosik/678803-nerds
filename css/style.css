@@ -85,6 +85,21 @@ a.cart-link:active {
   line-height: 55px;
 }
 
+.features-list:first-child {
+  background-color: #EEEEEE;
+  background-image: url("img/slide-1.img");
+}
+
+.features-list:nth-child(2) {
+  background-color: #EEEEEE;
+  background-image: url("img/slide-2.img");
+}
+
+.features-list:last-child {
+  background-color: #EEEEEE;
+  background-image: url("img/slide-3.img");
+}
+
 .services-item h3 {
   font-size: 24px;
   font-weight: bold;
@@ -178,7 +193,8 @@ a.social-button {
 }
 
 .feedback-form input[type="text"],
-.feedback-form input[type="email"] {
+.feedback-form input[type="email"],
+.feedback-form textarea {
   font: inherit;
   background-color: #ffffff;
   border: solid 2px #d7dcde;
@@ -192,11 +208,13 @@ a.social-button {
   border: none;
 }
 
-.feedback-form input:hover {
+.feedback-form input[type="text"]:hover,
+.feedback-form textarea:hover {
   border: solid 2px #b4b9bb;
 }
 
-.feedback-form input:focus {
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea:focus {
   border: solid 2px #000000;
 }
 
@@ -225,6 +243,14 @@ a.social-button {
 .filter-form label {
   line-height: 20px;
   color: #283136;
+}
+
+.filter-form label:hover {
+  color: #000000;
+}
+
+.filter-form label:disabled {
+  color: rgba(40, 49, 54, 0.3);
 }
 
 .filter-button {
