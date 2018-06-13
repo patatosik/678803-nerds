@@ -227,16 +227,19 @@ a.social-button {
 }
 
 .feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
 .feedback-form textarea:hover {
   border: solid 2px #b4b9bb;
 }
 
 .feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
 .feedback-form textarea:focus {
   border: solid 2px #000000;
 }
 
-.feedback-form:invalid {
+.feedback-form input[type="text"]:invalid,
+.feedback-form input[type="email"]:invalid {
   border: solid 2px #e74246;
 }
 
