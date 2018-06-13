@@ -87,17 +87,20 @@ a.cart-link:active {
 
 .features-list:first-child {
   background-color: #EEEEEE;
-  background-image: url("img/slide-1.img");
+  background-image: url("../img/slide-1.img");
+  background-repeat: repeat;
 }
 
 .features-list:nth-child(2) {
   background-color: #EEEEEE;
-  background-image: url("img/slide-2.img");
+  background-image: url("../img/slide-2.img");
+  background-repeat: repeat;
 }
 
 .features-list:last-child {
   background-color: #EEEEEE;
-  background-image: url("img/slide-3.img");
+  background-image: url("../img/slide-3.img");
+  background-repeat: repeat;
 }
 
 .services-item h3 {
