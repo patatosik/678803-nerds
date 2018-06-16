@@ -588,6 +588,16 @@ body {
   margin-top: 60px;
 }
 
+.footer-social-list {
+  display: flex;
+
+  list-style: none;
+}
+
+.social-button {
+  margin-right: 10px;
+}
+
 /*маска при наведении*/
 
 .catalog-item {
