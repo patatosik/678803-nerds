@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="main-header">
       <nav class="container main-navigation">
         <a class="main-header-logo">
@@ -24,8 +25,9 @@
     </header>
 
     <maim class="container">
+      <div class="features-wrap">
       <h1 class="visually-hidden">Студия дизайна Нердс</h1>
-      <section class="features">
+      <section class="container features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
           <li class="features-item">
@@ -52,7 +54,8 @@
           <button type="button" class="toggle" aria-label="Перейти к слайду №3 преимуществ"></button>
         </div>
       </section>
-      <section class="services">
+    </div>
+      <section class="container services">
         <h2 class="visually-hidden">Наши услуги</h2>
         <ul class="services-list">
           <li class="services-item">
@@ -72,7 +75,9 @@
           </li>
         </ul>
       </section>
-      <article class="about">
+      <article class="container about">
+        <div class="article-about-wrap">
+          <div class="about-wrap">
         <header class="about-header">
           <h2 class="about-slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
           <p class="about-lead">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -85,6 +90,8 @@
             <li class="about-services-item">Слайд-шоу и видео для корпоративных презентаций</li>
           </ul>
         </section>
+          </div>
+          <div class="about-accurasy-wrap">
         <section class="about-accurasy">
           <h3 class="visually-hidden">Почему мы?</h3>
           <a class="about-header-logo">
@@ -104,6 +111,8 @@
             </tr>
           </table>
         </section>
+      </div>
+        </div>
         <footer class="about-footer">
           <h3 class="visually-hidden">Наши партнеры</h3>
           <ul class="about-partners">
@@ -144,16 +153,19 @@
         </p>
         <a class="button" href="#">Напишите нам</a>
       </section>
-      <div class="footer-social">
+      <div class="container footer-social">
+        <div class="footer-slogan-wrap">
         <p class="footer-social-slogan">Давайте дружить, это выгодно!</p>
         <p class="footer-social-promo">Скидка 10% для друзей из социальных сетей</p>
-        <ul>
+        </div>
+        <ul class="footer-social-list">
           <li><a class="button social-button" href="#">Вконтакте</a></li>
           <li><a class="button social-button" href="#">Фейсбук</a></li>
           <li><a class="button social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
     </footer>
+
     <section class="modal modal-contacts-form">
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
@@ -175,5 +187,6 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+
   </body>
 </html>
