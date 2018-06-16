@@ -324,14 +324,6 @@ a.social-button {
   color: #000000;
 }
 
-.sorting ul {
-  list-style: none;
-}
-
-.catalog ul {
-  list-style: none;
-}
-
 .catalog-item img {
   border: solid 1px rgba(0, 1, 1, 0.1);
 }
@@ -404,6 +396,8 @@ body {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   width: 440px;
@@ -526,6 +520,24 @@ body {
   justify-content: space-between;
 }
 
+
+.sorting-list {
+  display: flex;
+  justify-content: flex-end;
+
+  list-style: none;
+}
+
+
+.sorting-list li {
+  margin-right: 25px;
+}
+
+
+.sorting-list li:last-child{
+  margin-right: 0;
+}
+
 .filters {
   margin-right: 140px;
   width: 260px;
@@ -556,10 +568,16 @@ body {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
 
   list-style: none;
+}
+
+.pagination-list .button {
+  margin-right: 10px;
 }
 
 .inner-page .main-footer {
