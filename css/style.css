@@ -549,8 +549,6 @@ body {
   width: 360px;
   margin-bottom: 35px;
   margin-right: 40px;
-
-  min-height: 575px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -566,4 +564,49 @@ body {
 
 .inner-page .main-footer {
   margin-top: 60px;
+}
+
+/*маска при наведении*/
+
+.catalog-item {
+  position: relative;
+}
+
+.catalog-item-price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 9px;
+  padding: 15px 60px 45px 60px;
+  width: 241px;
+  height: 171px;
+  display: none;
+}
+
+.catalog-item-price a {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.catalog-item-price h3 {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  min-width: 200px;
+}
+
+.price-button {
+  margin: 0 20px;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+}
+
+.catalog-item:hover .catalog-item-price{
+  display: block;
+}
+
+.catalog-item-title:hover {
+  color: #fb565a;
 }
