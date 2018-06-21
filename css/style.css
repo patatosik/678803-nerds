@@ -84,6 +84,14 @@ img {
   height: 65px;
 }
 
+.main-header-logo:hover img {
+  opacity: 0.8;
+}
+
+.main-header-logo:focus img {
+  opacity: 0.3;
+}
+
 .main-navigation {
   display: flex;
   align-items: center;
@@ -217,7 +225,7 @@ a.cart-link:active {
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 8px;
+  margin: 8px;
   border-radius: 50%;
   cursor: pointer;
   background-color: red;
@@ -647,21 +655,26 @@ a.about-header-logo {
 
 .filter-form fieldset {
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
   border: none;
 }
 
 .filter-form legend {
   margin-top: 0;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.filter-price legend {
+  margin-bottom: 55px;
+}
+
 .range-filter {
-  width: 260px;a
+  width: 260px;
 }
 
 .range-controls {
@@ -737,12 +750,27 @@ a.about-header-logo {
 }
 
 .filter-form ul {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
   list-style: none;
 }
 
+.filter-form li {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-left: 40px;
+}
+
+li.filter-option:last-of-type {
+  margin-bottom: 0;
+}
+
 .filters {
+  margin: 0;
   margin-right: 140px;
-  width: 260px;
+  min-width: 260px;
 }
 
 .filter-form label {
@@ -820,6 +848,10 @@ a.arrow-up polygon {
   fill: rgba(166, 166, 166, 0.2);
 }
 
+a.arrow-up.current polygon {
+  fill: #000000;
+}
+
 a.arrow-down polyline {
   fill: rgba(166, 166, 166, 0.2);
 }
@@ -883,18 +915,20 @@ a.arrow:active polyline {
   margin-right: 0;
 }
 
-/* Для плашки браузера карточки
+
 .catalog-item::before {
   content: "";
   position: absolute;
   z-index: 5;
   top: 0;
   left: 0;
+  right: 0;
+  height: 40px;
   background-image: url("../img/browser.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-*/
+
 
 .catalog-item img {
   border: solid 1px rgba(0, 1, 1, 0.1);
