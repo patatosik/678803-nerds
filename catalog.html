@@ -32,11 +32,19 @@
           <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Стоимость:</legend>
-              <input class="filter-input filter-input-range" type="range" name="price" id="filter-price" min="0" max="20000" value="0" aria-label="Установить диапозон стоимости">
-              <label for="filter-price-from">от</label>
-              <input class="filter-input filter-input-text" type="text" name="price" id="filter-price-from" aria-label="Укажите минимальную стоимость">
-              <label for="filter-price-to">до</label>
-              <input class="filter-input filter-input-text" type="text" name="price" id="filter-price-to" aria-label="Укажите максимальную стоимость">
+              <div class="range-filter" aria-label="Установить диапозон стоимости">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0" aria-label="Укажите минимальную стоимость"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000" aria-label="Укажите максимальную стоимость"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
@@ -90,8 +98,20 @@
               <li><a class="sorting-current" href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
-              <li><a class="sorting-current" href="#">По возрастанию</a></li>
-              <li><a href="#">По убыванию</a></li>
+              <li>
+                <a class="arrow arrow-up current" href="#"><span class="visually-hidden">По возрастанию</span>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                    <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="arrow arrow-down" href="#"><span class="visually-hidden">По убыванию</span>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                    <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </section>
           <section class="catalog">
