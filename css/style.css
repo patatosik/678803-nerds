@@ -902,20 +902,15 @@ a.arrow:active polyline {
 .catalog-item {
   position: relative;
   width: 360px;
-  height: 616px;
   margin: 0;
   margin-bottom: 35px;
   margin-right: 40px;
   padding-top: 40px;
-
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
-
 
 .catalog-item::before {
   content: "";
@@ -930,10 +925,16 @@ a.arrow:active polyline {
   background-repeat: no-repeat;
 }
 
-
-.catalog-item img {
-  border: solid 1px rgba(0, 1, 1, 0.1);
+.catalog-item:hover::before {
+  background-image: url("../img/browser-hover.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
+
+
+/*.catalog-item img {
+  border: solid 1px rgba(0, 1, 1, 0.1);
+}*/
 
 .catalog-item-price {
   background-color: #EEEEEE;
