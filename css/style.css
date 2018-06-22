@@ -509,14 +509,14 @@ a.about-header-logo {
   margin-bottom: 65px;
   padding: 0;
   width: 1440px;
-  height: 416px;
+  height: 427px;
 }
 
 .footer-contacts::after {
   content: "";
   position: absolute;
-  top: -20px;
-  left: 628px;
+  top: 40px;
+  left: 680px;
   width: 250px;
   height: 200px;
   background-image: url("../img/map-marker.png");
@@ -526,19 +526,20 @@ a.about-header-logo {
 
 .map img {
   width: 1440px;
-  height: 416px;
+  height: 427px;
 }
 
 .footer-contacts {
   position: absolute;
-  top: 64px;
+  top: 55px;
   left: 140px;
   margin: 0;
+  padding: 50px;
   background-color: #ffffff;
-  border: 50px solid #ffffff;
+
 }
 
-.footer-contacts span:first-child {
+.footer-contacts .title {
   display: block;
   margin: 0;
   margin-bottom: 10px;
@@ -557,10 +558,21 @@ a.about-header-logo {
   color: #666666;
 }
 
-.footer-contacts span:last-child {
+.footer-contacts .phone {
   display: block;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 15px;
+  color: #666666;
+}
+
+.footer-contacts a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 219px;
+  height: 50px;
 }
 
 .footer-social {
@@ -745,6 +757,11 @@ p.feedback-item {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+  background-color: rgba(251, 86, 90, 1);
 }
 
 .page-title {
