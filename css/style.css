@@ -510,6 +510,11 @@ a.about-header-logo {
   padding: 0;
 }
 
+.map img {
+  width: 1440px;
+  height: 416px;
+}
+
 .footer-contacts {
   position: absolute;
   top: 64px;
