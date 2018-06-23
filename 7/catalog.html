@@ -31,7 +31,7 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтры шаблонов</h2>
           <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="filter-price">
               <legend>Стоимость:</legend>
               <div class="range-filter" aria-label="Установить диапозон стоимости">
                 <div class="range-controls">
@@ -47,9 +47,9 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-grid">
               <legend>Сетка:</legend>
-              <ul>
+              <ul class="filter-list">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout" value="adaptive" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
@@ -64,9 +64,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-features">
               <legend>Особенности:</legend>
-              <ul>
+              <ul class="filter-list">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                   <label for="filter-slider">Слайдер</label>
@@ -122,7 +122,7 @@
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет главной страницы сайта Седона.">
                 <div class="catalog-item-price">
                   <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Седона</h2></a>
-                  <h3 class="catalog-item-description">Информационный сайт для туристов</h3>
+                  <h3 class="catalog-item-description">Информационный сайт<br> для туристов</h3>
                   <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
                 </div>
               </li>
@@ -130,7 +130,7 @@
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Макет главной страницы сайта приложения Пинк.">
                 <div class="catalog-item-price">
                   <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Pink App</h2></a>
-                  <h3 class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</h3>
+                  <h3 class="catalog-item-description">Продуктовый лендинг<br> приложения для iOS и Android</h3>
                   <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
                 </div>
               </li>
@@ -138,7 +138,7 @@
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет главной страницы сайта барбершопа Бородинский.">
                 <div class="catalog-item-price">
                   <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Barbershop</h2></a>
-                  <h3 class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</h3>
+                  <h3 class="catalog-item-description">Сайт салоны красоты.<br> Для мужчин, да.</h3>
                   <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
                 </div>
               </li>
@@ -146,7 +146,7 @@
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет главной страницы сайта Мишка.">
                 <div class="catalog-item-price">
                   <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Mishka</h2></a>
-                  <h3 class="catalog-item-description">Интернет-магазин вязаных игрушек</h3>
+                  <h3 class="catalog-item-description">Интернет-магазин<br> вязаных игрушек</h3>
                   <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
                 </div>
               </li>
@@ -154,7 +154,7 @@
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет главной страницы сайта Эй-плас.">
                 <div class="catalog-item-price">
                   <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>A Plus</h2></a>
-                  <h3 class="catalog-item-description">Лендинг курсов повышения квалификации</h3>
+                  <h3 class="catalog-item-description">Лендинг курсов повышения<br> квалификации</h3>
                   <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
                 </div>
               </li>
@@ -162,7 +162,7 @@
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет главной страницы сайта Кваст.">
                 <div class="catalog-item-price">
                   <a class="catalog-item-title" href="#" aria-label="Увеличить изображение"><h2>Кваст</h2></a>
-                  <h3 class="catalog-item-description">Промо-сайт производителя крафтового кваса</h3>
+                  <h3 class="catalog-item-description">Промо-сайт производителя<br> крафтового кваса</h3>
                   <button class="button price-button" aria-label="Купить за 9900 рублей">9 900 РУБ.</button>
                 </div>
               </li>
@@ -181,13 +181,13 @@
     <footer class="main-footer">
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map-with-marker.png" width="1440" height="416" alt="Гугл-карта. Адрес студии Нердс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8.">
+        <img src="img/map.jpg" width="1440" height="416" alt="Гугл-карта. Адрес студии Нердс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8.">
         <div class="footer-contacts">
           <p>
-            <span>Nёrds Design Studio</span><br>
+            <span class="title">Nёrds Design Studio</span><br>
             191186 г. Санкт-Петербург,<br>
             Б. Конюшенная, д. 19/8<br>
-            <span class="phone">Телефон: +7 (812) 275-75-75</span>
+            <span class="phone">тел.: +7 (812) 275-75-75</span>
           </p>
           <a class="button" href="#">Напишите нам</a>
         </div>
@@ -230,6 +230,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Напишите нам</legend>
+          <div class="feedback-form-wrap">
             <p class="feedback-item">
               <label for="feedback-name">Ваше имя</label>
               <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" aria-label="Ваше имя в формате: Имя Фамилия">
@@ -238,6 +239,7 @@
               <label for="feedback-email">Ваш e-mail:</label>
               <input type="email" name="email" id="feedback-email" placeholder="email@example.com" aria-label="Ваш e-mail в формате: email@example.com">
             </p>
+          </div>
             <p class="feedback-item">
               <label for="feedback-comment">Текст письма:</label>
               <textarea name="comment" row="5" id="feedback-comment" placeholder="В свободной форме" aria-label="Текст письма в свободной форме"></textarea>
