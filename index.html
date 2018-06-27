@@ -217,16 +217,25 @@
       var feedbackButton = document.querySelector(".feedback-comment-button");
       var popup = document.querySelector(".modal-contacts-form");
       var close = popup.querySelector(".modal-close");
+      var form = popup.querySelector("form");
+      var nameFocus = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=email]");
+
+
 
       feedbackButton.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
+        nameFocus.focus();
       });
 
       close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
       });
+
+
+    
 
     </script>
 
