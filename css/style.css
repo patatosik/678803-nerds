@@ -84,7 +84,7 @@ img {
   display: block;
   padding: 0;
   margin:  0;
-  padding-bottom: 20px;
+  padding-top: 10px;
   margin-right: 200px;
   width: 160px;
   height: 65px;
@@ -117,7 +117,8 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 25px 0;
+  padding:  0;
+  padding-top: 25px;
   min-width: 440px;
   list-style: none;
 }
@@ -129,6 +130,10 @@ a.cart-link {
   color: #000000;
 }
 
+a.cart-link {
+  padding-bottom: 0;
+}
+
 .site-navigation a {
   position: relative;
 }
@@ -137,7 +142,7 @@ a.cart-link {
   content: "";
   position: absolute;
   bottom: 15px;
-  left: 8px;
+  left: 6px;
   width: 74px;
   height: 2px;
   background-color: #fb565a;
@@ -147,7 +152,8 @@ a.cart-link {
   position: relative;
   margin: 0;
   margin-left: auto;
-  padding-left: 50px;
+  padding-top: 25px;
+  padding-left: 40px;
   max-width: 85px;
   background-color: #EEEEEE;
 }
@@ -155,8 +161,8 @@ a.cart-link {
 a.cart-link::before {
   content: "";
   position: absolute;
-  top: 26px;
-  left: 10px;
+  top: 32px;
+  left: 5px;
   width: 16px;
   height: 16px;
   background-image: url("../img/cart-icon.png");
@@ -186,7 +192,6 @@ a.cart-link:active {
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
-  /* padding-bottom: 35px; */
   background-color: #EEEEEE;
 }
 
@@ -197,21 +202,21 @@ a.cart-link:active {
 }
 
 .features-item {
-  padding: 43px 0 80px 0px;
+  padding: 69px 0 80px 0px;
   display: none;
 }
 
 .features-item h3 {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
 .features-item p {
-  max-width: 365px;
+  max-width: 380px;
   margin: 0;
   margin-bottom: 38px;
 }
@@ -273,7 +278,7 @@ a.cart-link:active {
   background-color: #EEEEEE;
   background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
-  background-position: 93% -19px;
+  background-position: 93% 7px;
 }
 
 .features-item:nth-child(2) {
@@ -298,7 +303,6 @@ a.cart-link:active {
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  /* margin-bottom: 122px; */
   padding: 0;
   max-width: 1160px;
   list-style: none;
@@ -429,7 +433,7 @@ a.cart-link:active {
 .about-lead {
   margin: 0;
   margin-bottom: 37px;
-  max-width: 615px;
+  max-width: 645px;
 }
 
 .about-services-list {
@@ -533,7 +537,6 @@ a.about-header-logo {
   display: flex;
   justify-content: center;
   width: 260px;
-  /* height: 90px; */
   margin: 0;
 }
 
@@ -612,7 +615,7 @@ a.about-header-logo {
 }
 
 span.title {
-  margin-bottom: 6px;
+  margin-bottom: 24px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -709,6 +712,10 @@ span.address {
   display: none;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-contacts-form {
   width: 760px;
   padding: 70px 100px;
@@ -725,7 +732,7 @@ span.address {
 
 .feedback-form legend {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -735,6 +742,7 @@ span.address {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
   width: 760px;
 }
@@ -744,8 +752,7 @@ p.feedback-item {
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
-  margin-bottom: 35px;
-  width: 360px;
+  padding-left:  2px;
 }
 
 .feedback-item label {
@@ -759,7 +766,7 @@ p.feedback-item {
 .feedback-form input[type="email"] {
   box-sizing: border-box;
   width: 360px;
-  padding: 19px 16px;
+  padding: 11px 15px;
   padding-right: 40px;
   font: inherit;
   background-color: #ffffff;
@@ -769,7 +776,7 @@ p.feedback-item {
 .feedback-form textarea {
   box-sizing: border-box;
   width: 760px;
-  padding: 14px 500px 87px 18px;
+  padding: 6px 500px 57px 15px;
   font: inherit;
   background-color: #ffffff;
   border: 2px solid #d7dcde;
@@ -798,6 +805,7 @@ p.feedback-item {
 .feedback-form .button {
   display: block;
   margin: 0;
+  margin-top: 50px;
   width: 260px;
   height: 50px;
 }
@@ -1207,7 +1215,6 @@ a.arrow:active polyline {
 
 .catalog-item img {
   width: 360px;
-  /*height: 576px;*/
   /*border: solid 1px rgba(0, 1, 1, 0.1);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5),
               0 1px 3px 0 rgba(0, 0, 0, 0.5) inset;*/
