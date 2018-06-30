@@ -57,6 +57,7 @@ img {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: middle;
   color: #ffffff;
   background-color: #fb565a;
   border: none;
@@ -106,8 +107,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+     -ms-flex-align: center;
+        align-items: center;
   max-width: 1160px;
   padding-top: 30px;
   font-weight: 500;
@@ -125,8 +126,8 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+     -ms-flex-pack: justify;
+        justify-content: space-between;
   margin: 0;
   padding:  0;
   padding-top: 25px;
@@ -267,15 +268,17 @@ a.cart-link:active {
   width: 18px;
   height: 18px;
   margin: 8px;
+  vertical-align: middle;
   border-radius: 50%;
+  border: none;
   cursor: pointer;
 }
 
 .features-controls .toggle::after {
   content: "";
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 0;
+  left: 0;
   z-index: 1;
   width: 18px;
   height: 18px;
@@ -1057,6 +1060,7 @@ p.feedback-item {
   display: inline-block;
   width: 50%;
   font-size: 16px;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
@@ -1356,9 +1360,10 @@ a.arrow:active polyline {
 }
 
 .catalog-item {
+  display: flex;
   position: relative;
   width: 360px;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
   margin-right: 40px;
   padding-top: 40px;
 }
@@ -1409,7 +1414,7 @@ a.arrow:active polyline {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  bottom: 7px;
+  bottom: 0px;
   left: 0;
   right: 0;
   margin: 0;
