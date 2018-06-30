@@ -806,10 +806,11 @@ span.address {
   100% {-webkit-transform: translate(-50%, calc(-50%));transform: translate(-50%, calc(-50%))}
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translate(calc(-50%), -50%);
+    -webkit-transform: translate(calc(-50%), -50%);
+            transform: translate(calc(-50%), -50%);
   }
 
   10%,
@@ -817,14 +818,41 @@ span.address {
   50%,
   70%,
   90% {
-    transform: translate(calc(-50% - 10px), -50%);
+    -webkit-transform: translate(calc(-50% - 10px), -50%);
+            transform: translate(calc(-50% - 10px), -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate(calc(-50% + 10px), -50%);
+    -webkit-transform: translate(calc(-50% + 10px), -50%);
+            transform: translate(calc(-50% + 10px), -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(calc(-50%), -50%);
+            transform: translate(calc(-50%), -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(calc(-50% - 10px), -50%);
+            transform: translate(calc(-50% - 10px), -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(calc(-50% + 10px), -50%);
+            transform: translate(calc(-50% + 10px), -50%);
   }
 }
 
