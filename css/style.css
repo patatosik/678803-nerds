@@ -659,7 +659,7 @@ a.about-header-logo {
 .footer-contacts {
   position: absolute;
   top: 55px;
-  left: 0;
+  left: 10px;
   z-index: 3;
   margin: 0;
   padding: 47px 50px;
@@ -1053,7 +1053,7 @@ p.feedback-item {
 
 .page-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   padding-top: 60px;
   padding-bottom: 110px;
   font-size: 55px;
@@ -1065,7 +1065,7 @@ p.feedback-item {
 
 .filter-form fieldset {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
   padding: 0;
   border: none;
 }
@@ -1080,7 +1080,8 @@ p.feedback-item {
 }
 
 .filter-price legend {
-  margin-bottom: 55px;
+  margin-bottom: 48px;
+  padding-top: 3px;
 }
 
 .range-filter {
@@ -1090,7 +1091,7 @@ p.feedback-item {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1111,7 +1112,7 @@ p.feedback-item {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1119,7 +1120,7 @@ p.feedback-item {
   border: 8px solid #ffffff;
   background-color: #ababab;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-          box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1146,8 +1147,8 @@ p.feedback-item {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
+  padding: 10px;
+  margin-left: 8px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
@@ -1213,8 +1214,7 @@ fieldset.filter-features {
   position: relative;
   display: block;
   margin:  0;
-  padding-top: 2px;
-  padding-bottom: 3px;
+
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1222,6 +1222,11 @@ fieldset.filter-features {
   user-select: none;
   line-height: 20px;
   color: #283136;
+}
+
+.filter-features label {
+  padding-top: 2px;
+  padding-bottom: 3px;
 }
 
 .filter-input-radio + label::before {
@@ -1240,7 +1245,7 @@ fieldset.filter-features {
   content: "";
   position: absolute;
   left: -27px;
-  top: 5px;
+  top: 4px;
   width: 10px;
   height: 10px;
   background-color: #4d4d4d;
@@ -1272,7 +1277,7 @@ fieldset.filter-features {
   content: "";
   position: absolute;
   left: -35px;
-  top: 0;
+  top: -1px;
   width: 20px;
   height: 20px;
   border: 2px solid #4d4d4d;
@@ -1284,7 +1289,7 @@ fieldset.filter-features {
   content: "";
   position: absolute;
   left: -30px;
-  top: 0;
+  top: 1px;
   width: 17px;
   height: 8px;
   border: 4px solid #4d4d4d;
@@ -1292,8 +1297,8 @@ fieldset.filter-features {
   border-top-style: none;
   border-right-style: none;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .filter-input-checkbox + label:hover::before,
@@ -1334,10 +1339,10 @@ fieldset.filter-features {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
   padding: 0;
   max-width: 777px;
 }
@@ -1352,26 +1357,23 @@ fieldset.filter-features {
 }
 
 .sorting-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  max-width: 450px;
+  min-width: 360px;
   list-style: none;
 }
 
 .sorting-list li {
-  margin-right: 30px;
+  /* margin-right: 33px; */
   min-width: 11px;
+}
+
+.sorting-list li:nth-last-child(2) {
+  margin-left: 15px;
 }
 
 .sorting-list li:last-child{
@@ -1382,6 +1384,10 @@ fieldset.filter-features {
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+a.arrow-down {
+  /* padding-left: 10px; */
 }
 
 a.arrow-up polygon {
