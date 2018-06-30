@@ -11,12 +11,6 @@ body {
   background-color: #ffffff;
 }
 
-main {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -25,6 +19,12 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -1448,7 +1448,7 @@ a.arrow:active polyline {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  min-width: 200px;
+  max-width: 230px;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
