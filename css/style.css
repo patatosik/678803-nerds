@@ -1164,12 +1164,17 @@ p.feedback-item {
   min-height: 100px;
 }
 
-.filter-features .filter-list {
-  min-height: 180px;
+.filter-features .filter-option {
+  margin:  0;
+  margin-bottom:  15px;
 }
 
 fieldset.filter-grid {
   margin-bottom: 45px;
+}
+
+fieldset.filter-features {
+  margin-bottom: 30px;
 }
 
 .filter-list li {
@@ -1181,11 +1186,14 @@ fieldset.filter-grid {
 .filter-option label {
   position: relative;
   display: block;
+  margin:  0;
+  padding-top: 2px;
+  padding-bottom: 3px;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   line-height: 20px;
   color: #283136;
 }
