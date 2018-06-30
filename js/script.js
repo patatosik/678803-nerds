@@ -39,6 +39,7 @@ form.addEventListener("submit", function(evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", nameField.value);
+      localStorage.setItem("email", emailField.value);
     }
   }
 });
