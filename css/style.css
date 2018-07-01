@@ -1187,8 +1187,13 @@ p.feedback-item {
   list-style: none;
 }
 
-.filter-grid .filter-list {
+/* .filter-grid .filter-list {
   min-height: 100px;
+} */
+
+.filter-grid .filter-option {
+  margin:  0;
+  margin-bottom:  15px;
 }
 
 .filter-features .filter-option {
@@ -1197,7 +1202,7 @@ p.feedback-item {
 }
 
 fieldset.filter-grid {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 fieldset.filter-features {
@@ -1214,7 +1219,6 @@ fieldset.filter-features {
   position: relative;
   display: block;
   margin:  0;
-
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1222,6 +1226,11 @@ fieldset.filter-features {
   user-select: none;
   line-height: 20px;
   color: #283136;
+}
+
+.filter-grid label {
+  padding-top: 2px;
+  padding-bottom: 3px;
 }
 
 .filter-features label {
@@ -1276,7 +1285,7 @@ fieldset.filter-features {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: -34px;
   top: -1px;
   width: 20px;
   height: 20px;
@@ -1288,7 +1297,7 @@ fieldset.filter-features {
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  left: -30px;
+  left: -29px;
   top: 1px;
   width: 17px;
   height: 8px;
