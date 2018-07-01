@@ -1370,21 +1370,19 @@ fieldset.filter-features {
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  min-width: 360px;
   list-style: none;
 }
 
 .sorting-list li {
-  /* margin-right: 33px; */
-  min-width: 11px;
+
 }
 
-.sorting-list li:nth-last-child(2) {
-  margin-left: 15px;
+.sorting-list li:not(:first-child) {
+  margin-left: 20px;
 }
 
 .sorting-list li:last-child{
-  margin-right: 0;
+
 }
 
 .sorting a {
